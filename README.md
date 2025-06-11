@@ -1,1 +1,186 @@
 # Login-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heyauth Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+    }
+
+    .main-container {
+      display: flex;
+      height: 1024px;
+      width: 1440px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .left-side {
+      width: 720px;
+      height: 1024px;
+      background: url('image.png') no-repeat center center;
+      background-size: cover;
+    }
+
+    .right-side {
+      width: 720px;
+      height: 1024px;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-wrapper {
+      width: 100%;
+      max-width: 400px;
+      padding: 40px 20px 20px 20px;
+      transform: translateY(-25%); /* content moved up */
+    }
+
+    .content-wrapper h4 {
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      text-align: center;
+      color: #6b7280;
+      margin-bottom: 32px;
+    }
+
+    .form-control {
+      border-radius: 8px;
+      height: 48px;
+      font-size: 16px;
+      padding: 10px 14px;
+    }
+
+    .login-btn {
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+      height: 48px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 16px;
+    }
+
+    .remember-me {
+      display: flex;
+      align-items: center;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .remember-me label {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .signup-link {
+      color: #3B82F6;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 6px;
+    }
+
+    .footer-links {
+      font-size: 14px;
+      margin-top: 48px;
+      text-align: center;
+      color: #888;
+    }
+
+    .footer-links span {
+      margin-right: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+
+      .left-side,
+      .right-side {
+        width: 100%;
+        height: auto;
+      }
+
+      .content-wrapper {
+        padding: 40px 20px;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    
+    <!-- Left Side -->
+    <div class="left-side">
+      <!-- Background image -->
+    </div>
+
+    <!-- Right Side -->
+    <div class="right-side">
+      <div class="content-wrapper">
+        <h4>HEYAUTH</h4>
+        <p class="subtitle">Welcome to <strong>Heyauth</strong></p>
+        <p class="tagline">Sign in to continue to Heyauth</p>
+
+        <form>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" />
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Password" />
+          </div>
+          <div class="remember-me">
+            <input type="checkbox" class="me-2" id="rememberMe" />
+            <label for="rememberMe">Remember me</label>
+          </div>
+          <button type="submit" class="btn login-btn">Log In</button>
+        </form>
+
+        <div class="text-center mt-4">
+          <span class="text-muted">Don’t have an account?</span>
+          <a href="#" class="signup-link">Sign Up</a>
+        </div>
+
+        <div class="footer-links mt-5">
+          <span>dribbble</span>
+          <span>Bootstrap</span>
+          <span>Instagram</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
